@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <title>Petrol Bunk Analysis</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #f4f7f8;
             color: #333;
         }
@@ -17,45 +22,68 @@
         .header {
             background: #0d6e6e;
             color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 60px 20px;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 42px;
         }
 
         .header p {
-            font-size: 18px;
+            font-size: 20px;
+            margin-top: 12px;
         }
 
         .container {
             max-width: 1000px;
             margin: 40px auto;
-            padding: 20px;
+            padding: 0 20px;
         }
 
         .card {
             background: white;
-            padding: 25px;
+            padding: 30px;
             margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        h2 {
+        .card h2 {
             color: #0d6e6e;
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tool {
+            background: #e6f2f2;
+            color: #0d6e6e;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: bold;
         }
 
         .button {
             display: inline-block;
-            padding: 12px 20px;
             background: #0d6e6e;
             color: white;
+            padding: 14px 24px;
             text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
+            border-radius: 7px;
+            margin-top: 15px;
+            font-weight: bold;
         }
 
         .button:hover {
@@ -64,74 +92,120 @@
 
         footer {
             text-align: center;
-            padding: 20px;
             background: #222;
             color: white;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
         }
     </style>
+
 </head>
 
 <body>
 
+    <!-- Header -->
     <div class="header">
         <h1>Petrol Bunk Analysis</h1>
         <p>Data Analysis Project</p>
     </div>
 
+
+    <!-- Main Content -->
     <div class="container">
 
+        <!-- About Project -->
         <div class="card">
-            <h2>About the Project</h2>
+            <h2>📊 About the Project</h2>
 
             <p>
-                This project analyzes petrol bunk data to identify
-                useful patterns, trends and insights using data analysis
-                techniques.
+                Petrol Bunk Analysis is a data analysis project focused on
+                exploring petrol bunk data to identify patterns, trends,
+                and meaningful insights from the available dataset.
+            </p>
+
+            <p>
+                The project includes data cleaning, exploratory data analysis,
+                statistical analysis, and data visualization using Python.
             </p>
         </div>
 
+
+        <!-- Technologies -->
         <div class="card">
-            <h2>Project Notebook</h2>
+            <h2>🛠️ Technologies Used</h2>
 
-            <p>
-                Explore the complete data analysis, data cleaning,
-                calculations and visualizations in the Jupyter Notebook.
-            </p>
-
-            <a class="button"
-               href="code.ipynb">
-                View Jupyter Notebook
-            </a>
+            <div class="tools">
+                <div class="tool">Python</div>
+                <div class="tool">Pandas</div>
+                <div class="tool">NumPy</div>
+                <div class="tool">Matplotlib</div>
+                <div class="tool">Jupyter Notebook</div>
+                <div class="tool">Data Visualization</div>
+            </div>
         </div>
 
+
+        <!-- Analysis -->
         <div class="card">
-            <h2>Tools Used</h2>
+            <h2>🔍 Analysis Performed</h2>
 
             <ul>
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Matplotlib</li>
+                <li>Data Collection and Understanding</li>
+                <li>Data Cleaning and Preprocessing</li>
+                <li>Exploratory Data Analysis</li>
+                <li>Statistical Analysis</li>
                 <li>Data Visualization</li>
-                <li>Jupyter Notebook</li>
+                <li>Identification of Important Trends and Patterns</li>
             </ul>
         </div>
 
+
+        <!-- Notebook -->
         <div class="card">
-            <h2>Project Repository</h2>
+            <h2>📓 Project Notebook</h2>
+
+            <p>
+                The complete analysis, Python code, outputs, tables,
+                and visualizations are available in the Jupyter Notebook.
+            </p>
+
+            <!-- IMPORTANT: nbviewer link -->
+            <a class="button"
+               href="https://nbviewer.org/github/nikhitha73/Petrol-Bunk-Analysis/blob/main/code.ipynb"
+               target="_blank">
+                View Complete Analysis
+            </a>
+        </div>
+
+
+        <!-- GitHub -->
+        <div class="card">
+            <h2>💻 GitHub Repository</h2>
+
+            <p>
+                View the complete source code and project files on GitHub.
+            </p>
 
             <a class="button"
                href="https://github.com/nikhitha73/Petrol-Bunk-Analysis"
                target="_blank">
-                View on GitHub
+                View GitHub Repository
             </a>
         </div>
 
     </div>
 
+
+    <!-- Footer -->
     <footer>
-        <p>Petrol Bunk Analysis | Data Analytics Project</p>
+        <p>Petrol Bunk Analysis</p>
+        <p>Data Analytics Project</p>
     </footer>
 
 </body>
+
 </html>
